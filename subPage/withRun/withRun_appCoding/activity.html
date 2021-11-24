@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>withRun</title>
+    <script
+      src="https://kit.fontawesome.com/d8690f5e8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/activity.js"></script>
+    <script src="js/activityKM.js"></script>
+    <script src="js/activityTime.js"></script>
+    <link rel="stylesheet" href="css/activity.css" />
+  </head>
+  <body>
+    <!-- main -->
+    <main>
+      <section class="map">
+        <div id="map">
+          <script>
+            let map;
+
+            function initMap() {
+              var addr = { lat: 37.52833910888663, lng: 127.12833122513757 };
+              //위도 경도
+
+              map = new google.maps.Map(document.getElementById("map"), {
+                center: addr,
+                zoom: 16,
+                //확대
+                /*
+                1: World
+                5: Landmass/continent
+                10: City
+                15: Streets
+                20: Buildings
+                */
+              });
+            }
+          </script>
+          <script
+            async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5vNyTWb2p6eCmTUPzIFZJUm7_YH6preo&callback=initMap"
+          ></script>
+        </div>
+      </section>
+      <section class="bg"></section>
+      <section class="exercise">
+        <div class="km"></div>
+        <div class="recode">
+          <span id="kilo">0</span>.<span id="metre">00</span>
+          <p>km</p>
+        </div>
+        <div class="record">
+          <ul>
+            <li><img src="images/icon_acti_speed.png" alt="speed" /></li>
+            <li class="speed">--</li>
+            <li class="speedOn"></li>
+            <li>SPEED</li>
+          </ul>
+          <ul>
+            <li><img src="images/icon_acti_time.png" alt="time" /></li>
+            <li>
+              <span id="hour">00</span><span>:</span
+              ><span id="minute">00</span>:<span id="second">00</span>
+            </li>
+            <li>TIME</li>
+          </ul>
+          <ul>
+            <li><img src="images/icon_acti_calorie.png" alt="calorie" /></li>
+            <li class="calorie">0</li>
+            <li class="calorieOn"></li>
+            <li>CALORIES</li>
+          </ul>
+        </div>
+        <div class="startBtn" id="startBtn"><a href="#">START</a></div>
+        <div class="stopBtn" id="stopBtn"><a href="#">| |</a></div>
+        <div class="reStartBtn" id="reStartBtn">
+          <a href="#"
+            ><img src="images/icon_reStartBtn.png" alt="reStartBtn"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <!-- //main -->
+    <!-- tab -->
+    <nav class="tab_bar">
+      <ul>
+        <li>
+          <a href="main1.html"
+            ><img src="images/tab_icon_home_g.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="challenge1.html"
+            ><img src="images/tab_icon_chall_g.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="activity_home.html"
+            ><img src="images/tab_icon_acti_p.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="mypage.html"
+            ><img src="images/tab_icon_prfile_g.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- //tab -->
+    <hr />
+  </body>
+</html>

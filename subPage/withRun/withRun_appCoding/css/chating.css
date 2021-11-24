@@ -1,0 +1,215 @@
+/* chating.css */
+@import url(common.css);
+body > header {
+  color: #000;
+}
+main {
+  background: linear-gradient(
+    180deg,
+    rgba(39, 142, 255, 0.1) 0%,
+    rgba(98, 113, 255, 0.1) 100%
+  );
+  margin-top: 70px;
+  height: 660px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+/* prevBtn */
+.prevBtn {
+  margin: 0px 20px 20px;
+}
+/* _profile_img */
+.my_profile_img img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.other_profile_img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  line-height: 32px;
+}
+
+/* 공통 */
+.chat_box {
+  display: inline-flex;
+  width: fit-content;
+  max-width: calc(100% - 120px);
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin-left: 15px;
+}
+.chat {
+  font-size: 16px;
+  line-height: 1;
+  margin: 5px;
+  padding: 15px 25px;
+  border-radius: 0 15px 15px 15px;
+  background: #fff;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1));
+  font-weight: 500;
+  color: #58595a;
+  margin-left: 15px;
+  line-height: 1.5;
+}
+/* chat_box other */
+.other .chat_time {
+  margin-left: 240px;
+  margin-top: -20px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #979797;
+  position: relative;
+}
+.other .chat_time::after {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 0;
+  background: url(../images/icon_chat_check.png) no-repeat 0 0;
+  width: 15px;
+  height: 15px;
+}
+.check {
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 250px;
+}
+.check .chk_box {
+  display: inline-block;
+}
+
+input#chk_top {
+  display: none;
+}
+input#chk_top + label {
+  cursor: pointer;
+  margin: 10px 0 0 50px;
+}
+input#chk_top + label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  border-radius: 50%;
+  border: 3px solid #cbcbcb;
+  vertical-align: middle;
+}
+input#chk_top:checked + label:before {
+  content: "\f00c"; /*폰트어썸 유니코드*/
+  font-family: "Font Awesome 5 free"; /*폰트어썸 아이콘 사용*/
+  font-weight: 900; /*폰트어썸 설정*/
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  border-color: #278eff;
+  font-size: 13px;
+  text-align: center;
+}
+.other .chat:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+/* chat_box other1 */
+.other1 {
+  margin-top: -20px;
+}
+.other1 .chat_time {
+  margin-left: 275px;
+  margin-top: -20px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #979797;
+  position: relative;
+}
+.other1 .chat_time::after {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 0;
+  background: url(../images/icon_chat_check.png) no-repeat 0 0;
+  width: 15px;
+  height: 15px;
+}
+/* my */
+.my {
+  align-self: flex-end;
+  align-items: flex-end;
+  max-width: 240px;
+  margin-right: 15px;
+  margin-top: 40px;
+}
+.my .chat {
+  border-radius: 15px 15px 0 15px;
+  margin-right: 25px;
+}
+/* loding */
+.loding > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+.loding > ul > li {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.loding > ul > li:nth-of-type(2) {
+  opacity: 65%;
+  margin-top: -20px;
+}
+.loding > ul > li:nth-of-type(3) {
+  opacity: 35%;
+}
+.loding > ul > li:nth-of-type(4) {
+  opacity: 25%;
+  margin-top: -15px;
+}
+
+/* footer */
+body > footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  border-top: 2px solid #afb8ff9b;
+}
+body > footer > form {
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: flex-end;
+}
+footer span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(to bottom, #97c5ff, #afb9ff);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+}
+fieldset.text_box {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.text_field {
+  text-align: center;
+  width: calc(100% - 40px);
+  height: 32px;
+  border: none;
+}

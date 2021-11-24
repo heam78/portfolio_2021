@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>withRun</title>
+    <script
+      src="https://kit.fontawesome.com/d8690f5e8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/chating.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- status_bar -->
+      <div class="status_bar">
+        <div class="left_item"><span>9</span>:<span>41</span></div>
+        <div class="right_item">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+      <!-- //status_bar -->
+    </header>
+    <!-- //header -->
+    <hr />
+    <!-- main -->
+    <main>
+      <div class="prevBtn">
+        <a href="main1.html"
+          ><img src="images/icon_back_btn.png" alt="prevBtn"
+        /></a>
+      </div>
+      <!-- other -->
+      <div class="chat_box other">
+        <div class="other_info">
+          <a href="#"
+            ><span class="other_profile_img">
+              <img src="images/icon_chat_logo.png" alt="profile_img" /> </span
+          ></a>
+        </div>
+        <span class="chat"
+          >Hi Henry! <br />
+          How May I Help You?
+        </span>
+        <span class="chat_time"><span>16</span>:<span>37</span></span>
+        <span class="chat check"
+          >Inquiries about errors
+          <p class="chk_box">
+            <input type="checkbox" id="chk_top" />
+            <label for="chk_top"></label>
+          </p>
+        </span>
+        <span class="chat check"
+          >Inquiries about bugs
+          <p class="chk_box">
+            <input type="checkbox" id="chk_top" />
+            <label for="chk_top"></label>
+          </p>
+        </span>
+      </div>
+      <!-- my -->
+      <div class="chat_box my">
+        <span class="chat">An error occurs while using the app</span>
+        <a href="#"
+          ><span class="my_profile_img">
+            <img src="images/empty.jpg" alt="profile_img" /> </span
+        ></a>
+      </div>
+      <!-- other1 -->
+      <div class="chat_box other1">
+        <div class="other_info1">
+          <a href="#"
+            ><span class="other_profile_img">
+              <img src="images/icon_chat_logo.png" alt="profile_img" /> </span
+          ></a>
+        </div>
+        <span class="chat">Sure Henry! But please Wait a few minute ...</span>
+        <span class="chat_time"><span>16</span>:<span>42</span></span>
+      </div>
+      <div class="loding">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </main>
+    <!-- //main -->
+    <hr />
+    <!-- footer -->
+    <footer>
+      <span class="voice_btn"
+        ><a href="#"><img src="images/icon_chat_voice.png" alt="voice" /></a
+      ></span>
+      <form action="/" method="post">
+        <fieldset class="text_box">
+          <legend class="blind">채팅 입력창</legend>
+          <label for="chatting" class="blind">채팅입력</label>
+          <input
+            type="text"
+            id="chatting"
+            class="text_field"
+            placeholder="Type Your Message . . ."
+          />
+          <span class="send_btn"
+            ><a href="#"
+              ><img src="images/icon_chat_send.png" alt="send_btn" /></a
+          ></span>
+        </fieldset>
+      </form>
+    </footer>
+    <!-- //footer -->
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>snoopy 찰리 브라운</title>
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      /*배경*/
+      body {
+        background: linear-gradient(to right, #9eb2ed, #c7d3f1, #919fba);
+        margin: 0 auto;
+      }
+      /*하트*/
+      div[class^="heart_"] {
+        position: relative;
+        width: 100%;
+        top: 460px;
+      }
+      div[class^="heart_"]::after,
+      div[class^="heart_"]::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 54px;
+        background-color: rgb(243, 92, 92);
+        border-radius: 20px 20px 0 0;
+      }
+
+      div[class^="heart_"]::after {
+        transform-origin: 0 100%;
+        transform: translateX(20px) rotate(-45deg);
+      }
+
+      div[class^="heart_"]:before {
+        transform-origin: 100% 100%;
+        transform: translateX(-10px) rotate(45deg);
+      }
+      .heart_1 {
+        bottom: 0;
+        left: 10%;
+        animation: heart-movement 4s infinite ease-in -0.66s;
+      }
+
+      .heart_2 {
+        bottom: 6px;
+        left: 25%;
+        animation: heart-movement 4s infinite ease-in -2.23s;
+      }
+
+      .heart_3 {
+        bottom: 12px;
+        left: 38%;
+        animation: heart-movement 4s infinite ease-in -0.26s;
+      }
+      .heart_4 {
+        bottom: 1px;
+        left: 65%;
+        animation: heart-movement 4s infinite ease-in -1.67s;
+      }
+      .heart_5 {
+        bottom: 6px;
+        left: 78%;
+        animation: heart-movement 4s infinite ease-in -2.88s;
+      }
+
+      .heart_6 {
+        bottom: 15px;
+        left: 90%;
+        animation: heart-movement 4s infinite ease-in -0.23s;
+      }
+      @keyframes heart-movement {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(0, -500px, 0);
+        }
+      }
+
+      /*얼굴*/
+      .snoopy {
+        z-index: 10;
+        position: relative;
+        margin: 0 auto;
+        top: 100px;
+        width: 360px;
+        height: 380px;
+      }
+      .snoopy .face {
+        width: 360px;
+        height: 380px;
+        background: #f2d6d2;
+        border: 3px solid #000;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+
+      /*hair*/
+      .hair {
+        position: absolute;
+        left: 110px;
+        width: 70px;
+        height: 70px;
+        top: -9px;
+        border: 3px solid #000;
+        border-radius: 50%;
+        border-right-color: transparent;
+      }
+      .hair::after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        width: 30px;
+        height: 25px;
+        border-radius: 50%;
+        border: 3px solid #000;
+      }
+      .hair::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 34px;
+        width: 60px;
+        height: 45px;
+        border-radius: 50%;
+        border: 3px solid #000;
+        clip-path: polygon(0 65%, 100% 40%, 100% 100%, 0 100%);
+      }
+
+      /*ear*/
+      .ear {
+        position: absolute;
+        left: calc(50% - 49px);
+        width: 98px;
+        height: 98px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        /*background: magenta;*/
+        z-index: -3;
+      }
+      .ear::before,
+      .ear::after {
+        content: "";
+        position: absolute;
+        top: 180px;
+        left: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #f2d6d2;
+        border: 3px solid #000;
+      }
+      .ear::before {
+        margin-left: 165px;
+      }
+      .ear::after {
+        margin-left: -170px;
+      }
+      .ear_1 {
+        position: absolute;
+        top: 185px;
+        left: 300px;
+        width: 80px;
+        height: 84px;
+        border-radius: 50%;
+        background: #f2d6d2;
+      }
+      /*eyebrows*/
+      .eyebrows {
+        position: absolute;
+        left: calc(50% - 5px);
+        top: 110px;
+        width: 10px;
+        height: 10px;
+        /*background: red;*/
+      }
+      .eyebrows::before,
+      .eyebrows::after {
+        content: "";
+        position: absolute;
+        left: calc(50% - 15px);
+        width: 35px;
+        height: 10px;
+        background: #000;
+        border-radius: 20%;
+        transition: transform 0.5s ease-in-out;
+      }
+      .eyebrows::before {
+        margin-left: 50px;
+        transform: rotate(25deg);
+      }
+      .eyebrows::after {
+        margin-left: -50px;
+        transform: rotate(-25deg);
+      }
+      .snoopy:hover .eyebrows::after {
+        transform: rotate(-25deg) translateY(-10px);
+      }
+      .snoopy:hover .eyebrows::before {
+        transform: rotate(25deg) translateY(-10px);
+      }
+      /*eyes*/
+      .eyes {
+        position: absolute;
+        left: calc(50% - 9px);
+        width: 18px;
+        height: 25px;
+        top: 170px;
+        /*background: #000;*/
+        border-radius: 50%;
+      }
+
+      .eyes::before,
+      .eyes::after {
+        content: "";
+        position: absolute;
+        left: calc(50% - 9px);
+        width: 18px;
+        height: 25px;
+        background: #000;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .eyes::before {
+        margin-left: 50px;
+      }
+      .eyes::after {
+        margin-left: -50px;
+      }
+      .snoopy:hover .eyes::after {
+        transform: rotate(-15deg) scale(1.2, 0.1);
+      }
+      .snoopy:hover .eyes::before {
+        transform: rotate(15deg) scale(1.2, 0.1);
+      }
+
+      /*nose*/
+      .nose {
+        position: absolute;
+        left: calc(50% - 30px);
+        width: 50px;
+        height: 60px;
+        top: 145px;
+        background: #f2d6d2;
+        border-radius: 43%;
+        border: 3px solid #000;
+        border-right-color: transparent;
+        /*polygon(0 0, 100% 0%-top, 100% 100%-bottom, 0 100%); 기본값*/
+      }
+
+      /*mouth*/
+      .mouth {
+        position: absolute;
+        left: calc(50% - 125px);
+        top: 80px;
+        width: 250px;
+        height: 250px;
+        border-radius: 43%;
+        border: 3px solid #000;
+        box-sizing: border-box;
+        clip-path: polygon(0 75%, 100% 75%, 100% 100%, 0 100%);
+        transition: clip-path 0.5s ease-in-out;
+      }
+
+      .snoopy:hover .mouth {
+        clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+      }
+      /*cheek*/
+      .cheek {
+        position: absolute;
+        left: calc(50% - 15px);
+        top: 170px;
+        width: 30px;
+        height: 80px;
+        border-radius: 50%;
+        /*background: red;*/
+        box-shadow: -135px 0 35px 30px #f58699, 135px 0 35px 30px #f58699;
+      }
+      .snoopy:hover .cheek {
+        box-shadow: -135px 0 35px 30px #f8496c, 135px 0 35px 30px #f8496c;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="heart_1"></div>
+      <div class="heart_2"></div>
+      <div class="heart_3"></div>
+      <div class="heart_4"></div>
+      <div class="heart_5"></div>
+      <div class="heart_6"></div>
+
+      <div class="snoopy">
+        <div class="face">
+          <div class="hair"></div>
+          <div class="ear"></div>
+          <div class="ear_1"></div>
+          <div class="eyebrows"></div>
+          <div class="eyes"></div>
+          <div class="nose"></div>
+          <div class="mouth"></div>
+          <div class="cheek"></div>
+        </div>
+      </div>
+  </body>
+</html>

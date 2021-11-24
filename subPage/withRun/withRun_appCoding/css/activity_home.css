@@ -1,0 +1,64 @@
+/* activity_home */
+@import url(common.css);
+body {
+  overflow-y: hidden;
+}
+body > header {
+  color: #000;
+}
+
+/* main */
+main {
+  height: 70%;
+  margin-top: 90px;
+}
+
+/* .activity  */
+.activity {
+  margin-left: 25px;
+  display: flex;
+}
+.prevBtn {
+  margin-top: 10px;
+}
+.activity h1 {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  font-size: 26px;
+  font-weight: 600;
+}
+.activity h1 span {
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+  -webkit-background-clip: text; /* 텍스트에만 백그라운드 적용 */
+  -webkit-text-fill-color: transparent;
+  margin-left: 8px;
+}
+/* activity_section */
+.activity_section {
+  margin: 48px 25px 0 25px;
+}
+.activity_section > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.activity_section > ul > li {
+  width: 145px;
+  height: 145px;
+  background: #f7f8ff;
+  box-shadow: 5px 10px 15px rgba(98, 113, 255, 0.1),
+    -8px -8px 15px rgba(255, 255, 255, 0.65);
+  border-radius: 10px;
+  margin-bottom: 45px;
+  text-align: center;
+  padding-top: 35px;
+  box-sizing: border-box;
+}
+.activity_section > ul:nth-of-type(3) > li:nth-of-type(1) {
+  padding-top: 55px;
+}
+.activity_section > ul > li span {
+  display: block;
+  color: #1ea5fc;
+  margin-top: 15px;
+}

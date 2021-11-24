@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>withRun</title>
+    <script
+      src="https://kit.fontawesome.com/d8690f5e8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/challenge.js"></script>
+    <link rel="stylesheet" href="css/challenge2.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- status_bar -->
+      <div class="status_bar">
+        <div class="left_item"><span>9</span>:<span>41</span></div>
+        <div class="right_item">
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+      <!-- //status_bar -->
+    </header>
+    <!-- //header -->
+    <!-- main -->
+    <main>
+      <section class="background"></section>
+      <section class="challenge_start">
+        <h1>Challenge</h1>
+        <div class="start" id="bt__start"><a href="#">START</a></div>
+        <div class="play">
+          <a href="#">
+            <div class="timer">
+              <span id="minute">00</span>:<span id="second">00</span>
+            </div>
+            <p>working session</p>
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="#"><img src="images/icon_prevBtn.png" alt="prevBtn" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                id="bt__reStart"
+                class="bt_reStart"
+                src="images/icon_startBtn.png"
+                alt="startBtn"
+              />
+              <img
+                id="bt__stop"
+                class="bt_stop"
+                src="images/icon_playBtn.png"
+                alt="playBtn"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/icon_chall_nextBtn.png" alt="nextBtn"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <section class="background1"></section>
+      <section class="challenge_Phase">
+        <div>
+          <h2>First Phase</h2>
+          <h3>Working - 25 min</h3>
+          <div class="remaining">
+            <p><span>13 min remaining</span></p>
+            <p>next:<span>Short Break</span></p>
+          </div>
+          <div class="loader"></div>
+        </div>
+      </section>
+      <section class="challenge_progess">
+        <ul>
+          <li>
+            1st Phase
+            <div class="circle"></div>
+            <div class="circle-chart4"></div>
+          </li>
+          <li>
+            2st Phase
+            <div class="circle"></div>
+          </li>
+          <li>
+            3st Phase
+            <div class="circle"></div>
+          </li>
+          <li>
+            4st Phase
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- //main -->
+    <!-- tab -->
+    <nav class="tab_bar">
+      <ul>
+        <li>
+          <a href="main1.html"
+            ><img src="images/tab_icon_home_g.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="challenge1.html"
+            ><img src="images/tab_icon_chall_p.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="activity_home.html"
+            ><img src="images/tab_icon_acti_g.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="mypage.html"
+            ><img src="images/tab_icon_prfile_g.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- //tab -->
+    <hr />
+  </body>
+</html>

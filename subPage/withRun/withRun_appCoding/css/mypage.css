@@ -1,0 +1,218 @@
+/* challenge2.css */
+@import url(common.css);
+
+/* main */
+main {
+  height: 125%;
+}
+/* bg */
+.bg {
+  width: 375px;
+  height: 293px;
+  background: linear-gradient(
+    180deg,
+    rgba(39, 142, 255, 0.9) 0%,
+    rgba(98, 113, 255, 0.9) 100%
+  );
+  border-radius: 0px 0px 50px 50px;
+}
+/* profile */
+.profile {
+  margin-top: -220px;
+}
+.profile > .prolfile_img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.profile > .prolfile_img img {
+  border-radius: 27px;
+}
+.profile span {
+  margin-left: 155px;
+  font-weight: 900;
+  font-size: 24px;
+  color: #eff3ff;
+}
+/* imformation */
+.information {
+  width: 311px;
+  height: 166px;
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(11, 12, 26, 0.05);
+  border-radius: 20px;
+  margin: -40px auto;
+}
+.information .name {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding-top: 15px;
+}
+.information .name span {
+  font-size: 18px;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+  -webkit-background-clip: text; /* 텍스트에만 백그라운드 적용 */
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.information > ul > li {
+  margin: 20px;
+}
+.information > ul > li img {
+  padding-right: 15px;
+}
+.information > ul > li span {
+  font-weight: 500;
+}
+/* myBage */
+.myBage {
+  position: relative;
+  margin-top: 80px;
+}
+.myBage::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 375px;
+  height: 7px;
+  background: #e0dddd;
+}
+.bage {
+  margin: 20px;
+  font-size: 18px;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+  -webkit-background-clip: text; /* 텍스트에만 백그라운드 적용 */
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.myBage_list {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.myBage_list ul {
+  width: 73px;
+  height: 87px;
+  background: linear-gradient(to bottom, #61a1ea, #8490ea);
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.65),
+    5px 5px 10px rgba(255, 255, 255, 0.2);
+  border-radius: 0px 0px 20px 20px;
+  text-align: center;
+  border: 5px solid #c4c4c4;
+}
+.myBage_list ul > li:nth-of-type(1) img {
+  margin-top: 10px;
+}
+.myBage_list ul:nth-of-type(3) > li:nth-of-type(1) img {
+  width: 39.07px;
+  height: 35.33px;
+}
+.myBage_list ul > li:nth-of-type(1) span {
+  display: block;
+  font-weight: 500;
+  font-size: 10px;
+  color: #fff;
+  margin-top: 5px;
+}
+.myBage_list ul:nth-of-type(2) > li:nth-of-type(1) img {
+  margin-top: 18px;
+}
+.myBage_list ul:nth-of-type(3) > li:nth-of-type(1) img {
+  margin-top: 24px;
+}
+.myBage_list ul:nth-of-type(2) > li:nth-of-type(1) span {
+  margin-top: 10px;
+}
+.myBage_list ul:nth-of-type(3) > li:nth-of-type(1) span {
+  margin-top: 12px;
+}
+.myBage_list ul > li:nth-of-type(2) {
+  color: #646464;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+/* my_graph_total */
+.my_graph_total {
+  margin-top: 100px;
+  position: relative;
+}
+.my_graph_total::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 375px;
+  height: 7px;
+  background: #e0dddd;
+}
+.my_graph_total ul {
+  display: flex;
+  margin: 10px;
+}
+.my_graph_total ul > li {
+  width: 50px;
+  height: 50px;
+  margin-right: 11px;
+  background: linear-gradient(180deg, #ebf3ff, #eff1ff);
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.65),
+    10px 10px 15px rgba(98, 113, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.my_graph_total ul > li:nth-of-type(3) {
+  background: linear-gradient(180deg, #b6d8ff, #c8cfff);
+  box-shadow: 4px 4px 4px rgba(98, 113, 255, 0.35),
+    -5px -5px 10px rgba(255, 255, 255, 0.65);
+}
+.graph {
+  float: left;
+  width: 135px;
+  height: 135px;
+  background: #ffffff;
+  box-shadow: 1px 1px 12px rgba(11, 12, 26, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  margin: 20px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.graph span {
+  display: block;
+}
+.graph span:nth-of-type(1) {
+  font-weight: 500;
+  font-size: 12px;
+  color: #b5b6c4;
+  margin: 5px 0;
+}
+.graph span:nth-of-type(2) {
+  font-weight: 600;
+  font-size: 18px;
+  color: #278eff;
+}
+.total {
+  float: right;
+  margin-top: 70px;
+  margin-right: 60px;
+}
+.total span {
+  display: block;
+}
+.total span:nth-of-type(1) {
+  color: #b5b6c4;
+  font-weight: 500;
+  font-size: 12px;
+}
+.total span:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 36px;
+  color: #278eff;
+}

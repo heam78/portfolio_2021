@@ -1,0 +1,137 @@
+/* challenge.css */
+@import url(common.css);
+
+/* main */
+main {
+    height: 80%;
+}
+.background {
+  width: 375px;
+  height: 532px;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+}
+/* .Challenge */
+.Challenge {
+  margin-top: -450px;
+  display: flex;
+}
+.Challenge h1 {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.Challenge a {
+  margin: 5px 25px 0 0;
+}
+/* challenge_info */
+.challenge_info {
+  width: 272px;
+  height: 169px;
+  border: 1px solid #fff;
+  border-radius: 25px 0 25px 25px;
+  margin: 55px 51px;
+  position: relative;
+}
+.challenge_info > ul {
+  width: 146px;
+  height: 170px;
+  background: #fff;
+  border-radius: 25px 0 25px 25px;
+  text-align: center;
+  padding-top: 23px;
+  box-sizing: border-box;
+}
+.challenge_info > ul > li:nth-of-type(1) {
+  color: #278eff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.challenge_info > ul > li:nth-of-type(1) span {
+  display: block;
+  color: #6271ff;
+}
+.challenge_info > ul > li:nth-of-type(2) {
+  font-size: 12px;
+  color: #adadad;
+  margin: 10px 0 30px;
+}
+.challenge_info > ul > li:nth-of-type(3) a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #278eff;
+  border-bottom: 2px solid #278eff;
+}
+.challenge_trophy {
+  position: absolute;
+  top: 34px;
+  right: 23px;
+}
+/* available */
+.background1 {
+  width: 375px;
+  height: 298px;
+  background: #eaeaea;
+  border-radius: 50px 0 0 0;
+  margin-top: 105px;
+}
+.available {
+  margin-top: -365px;
+  margin-left: 27px;
+}
+.available > h2 {
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.available > ul {
+  width: 319px;
+  height: 75px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 5px 10px 15px rgba(98, 113, 255, 0.1);
+  margin-bottom: 35px;
+  position: relative;
+}
+.available > ul:nth-of-type(1) > li > a > img {
+  width: 18px;
+  height: 28px;
+}
+.available > ul:nth-of-type(2) > li > a > img {
+  width: 28px;
+  height: 28px;
+}
+.available > ul:nth-of-type(3) > li > a > img {
+  width: 28px;
+  height: 28px;
+}
+.available > ul > li:nth-child(1) {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.available > ul > li:nth-child(2) {
+  margin-left: 50px;
+  padding-top: 15px;
+}
+.available > ul > li:nth-child(3) {
+  margin-left: 50px;
+  padding-top: 8px;
+}
+.available > ul > li:nth-child(2) > a {
+  font-size: 16px;
+  font-weight: 800;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+  -webkit-background-clip: text; /* 텍스트에만 백그라운드 적용 */
+  -webkit-text-fill-color: transparent;
+}
+.available > ul > li:nth-child(3) > a {
+  font-size: 14px;
+  font-weight: 500;
+}
+.nextBtn {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+}

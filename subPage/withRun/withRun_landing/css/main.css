@@ -1,0 +1,2342 @@
+@import url(reset.css);
+/* main.css */
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #000;
+  background: #f0ede8;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* container */
+#container {
+  position: relative;
+  width: 1920px;
+}
+#container > div {
+  margin-bottom: 30px;
+}
+#container > div > section {
+  position: relative;
+}
+#container > div > section > span {
+  display: block;
+  text-align: left;
+}
+
+/*section*/
+section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: 0.07em;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+  -webkit-background-clip: text; /* 텍스트에만 백그라운드 적용 */
+  -webkit-text-fill-color: transparent;
+}
+
+/*content1*/
+#content1 {
+  position: relative;
+  width: 2000px;
+  /* height: 980px; */
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+}
+
+#content1 > section {
+  position: absolute;
+  width: 1718px;
+  left: 55px;
+}
+
+#content1 > section > h2 {
+  opacity: 0;
+  position: absolute;
+  width: 339px;
+  height: 162px;
+  left: 0;
+  top: 50px;
+  transform: translateY(50px);
+  transition: all 1s ease 0.5s;
+}
+#content1 > section > h3 {
+  opacity: 0;
+  position: absolute;
+  width: 290px;
+  height: 69px;
+  top: 320px;
+  left: 0;
+  font-size: 65px;
+  line-height: 76px;
+  color: #fff;
+  transform: translateY(50px);
+  transition: all 1s ease 0.6s;
+}
+#content1 > section > span.txt1 {
+  opacity: 0;
+  position: absolute;
+  width: 309.44px;
+  height: 41.02px;
+  top: 420px;
+  left: 25px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  transform: translateY(50px);
+  transition: all 1s ease 0.7s;
+}
+#content1 > section > span.txt1::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 85px;
+  width: 1px;
+  left: -15px;
+  top: 10px;
+}
+
+#content1 .mock1 > li:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  left: 650px;
+  top: 200px;
+  transform: rotate(0);
+  transition: all 1s ease 0.8s;
+}
+#content1 .mock1 > li:nth-of-type(2) {
+  opacity: 0;
+  z-index: 20;
+  position: absolute;
+  top: 200px;
+  left: 800px;
+  width: 301px;
+  height: 703px;
+  transition: all 1s ease 0.8s;
+}
+#content1 .mock1 > li:nth-of-type(3) {
+  opacity: 0;
+  position: absolute;
+  top: 200px;
+  width: 301px;
+  height: 703px;
+  left: 950px;
+  transform: rotate(0);
+  transition: all 1s ease 0.8s;
+}
+
+#content1 > section > .icon1 {
+  position: absolute;
+  width: 105px;
+  height: 103.64px;
+  left: 1590px;
+  top: 20px;
+  background: url(../images/icon1.png) no-repeat 0 0;
+  animation: icon 3s ease 0s;
+}
+@keyframes icon {
+  0% {
+    left: 1420px;
+  }
+  100% {
+    left: 1590px;
+  }
+}
+#content1 > section > span > ul.store {
+  opacity: 0;
+  position: absolute;
+  width: 292px;
+  height: 48px;
+  top: 620px;
+  transform: translateY(50px);
+  transition: all 1s ease 0.5s;
+}
+#content1 .store > li:nth-of-type(1) {
+  padding-bottom: 10px;
+}
+/* on */
+#content1 > section.on > h2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content1 > section.on > h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content1 > section.on > span.txt1 {
+  opacity: 1;
+  transform: translateY(0);
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+}
+
+#content1 > section.on > span > .mock1 > li:nth-of-type(1) {
+  opacity: 1;
+  transform: translateY(0) rotate(-11deg);
+}
+#content1 > section.on > span > .mock1 > li:nth-of-type(2) {
+  opacity: 1;
+}
+#content1 > section.on > span > .mock1 > li:nth-of-type(3) {
+  opacity: 1;
+  transform: translateY(0) rotate(11deg);
+}
+
+#content1 > section.on > span > ul.store {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*content2*/
+#content2 {
+  position: relative;
+  /* height: 1050px; */
+}
+#content2 > section {
+  position: absolute;
+  width: 1567px;
+  height: 900px;
+  left: 177px;
+  top: px;
+  background: #ffffff;
+  border-radius: 40px;
+  transform: translateX(40px);
+  transition: all 1s ease 0.2s;
+}
+#content2 > section > .num1 {
+  opacity: 0;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 950px;
+  top: 92px;
+  border-radius: 50%;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content2 > section > .num2 {
+  opacity: 0;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 985px;
+  top: 480px;
+  border-radius: 50%;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content2 > section > h2:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 163px;
+  height: 56px;
+  left: 783.5px;
+  top: 100px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content2 > section > h2:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  width: 225px;
+  height: 59px;
+  left: 761.5px;
+  top: 490px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+
+#content2 > section > span:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  left: 408px;
+  top: 220px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  transform: translateX(50px);
+  transition: all 1s ease 0.8s;
+}
+#content2 > section > span > ul {
+  opacity: 0;
+  position: absolute;
+  width: 1567px;
+  height: 94px;
+  left: 330px;
+  top: 610px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content2 > section > span > ul > li {
+  opacity: 0;
+  float: left;
+  padding-right: 120px;
+}
+#content2 > section > span > ul > li > img {
+  opacity: 0;
+  display: block;
+  margin: 0px auto;
+}
+#content2 > section > span > ul > li > span {
+  opacity: 0;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 2;
+}
+#content2 > section > span > ul > li > span > em {
+  opacity: 0;
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 0.07em;
+  transform: translateX(50px);
+  transition: all 1s ease 1s;
+}
+#content2 > section > span > ul > li > span > strong {
+  opacity: 0;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0.07em;
+  transform: translateX(50px);
+  transition: all 1s ease 1.2s;
+}
+#content2 > section > span > ul > li:nth-of-type(2) {
+  opacity: 0;
+  margin-top: 5px;
+}
+#content2 > section > span > ul > li:nth-of-type(3) {
+  opacity: 0;
+  margin-top: 22px;
+}
+/* on */
+#content2 > section.on > .num1 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content2 > section.on > .num2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content2 > section.on > h2:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content2 > section.on > h2:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#content2 > section.on > span:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content2 > section.on > span > ul {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content2 > section.on > span > ul > li {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content2 > section.on > span > ul > li > img {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content2 > section.on > span > ul > li > span {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content2 > section.on > span > ul > li > span > em {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content2 > section.on > span > ul > li > span > strong {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*content3*/
+#content3 {
+  position: relative;
+  width: 1920px;
+  /* height: 1050px; */
+}
+#content3 > section {
+  position: absolute;
+  top: -30px;
+}
+#content3 > section > .num3 {
+  opacity: 0;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 1200px;
+  top: 108px;
+  border-radius: 50%;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(10px);
+  transition: all 1s ease 0.3s;
+}
+#content3 > section > h2:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 315px;
+  height: 59px;
+  left: 890px;
+  top: 120px;
+  transform: translateX(100px);
+  transition: all 1s ease 0.3s;
+}
+#content3 > section > .des > ul {
+  position: absolute;
+  width: 1567px;
+  left: 550px;
+  top: 240px;
+}
+#content3 > section > .des > ul > li {
+  opacity: 0;
+  float: left;
+  padding-right: 60px;
+  transform: translateY(50px);
+  transition: all 1s ease 0.5s;
+}
+#content3 > section > .des > ul > li:nth-of-type(1) img {
+  margin-top: -15px;
+  width: 279px;
+}
+#content3 > section > .des > ul > li:nth-of-type(2) {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 120px;
+}
+#content3 > section > .des > ul > li:nth-of-type(4) {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 120px;
+}
+#content3 > section > .des > ul > li:nth-of-type(5) {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 40px;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+  -webkit-background-clip: text; /* 텍스트에만 백그라운드 적용 */
+  -webkit-text-fill-color: transparent;
+}
+#content3 > section > .des > ul > li > img {
+  display: block;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+#content3 > section > h2:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  width: 294px;
+  height: 59px;
+  left: 900px;
+  top: 500px;
+  transform: translateX(100px);
+  transition: all 1s ease 0.5s;
+}
+#content3 > section > .num4 {
+  opacity: 0;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 1190px;
+  top: 480px;
+  border-radius: 50%;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(10px);
+  transition: all 1s ease 0.3s;
+}
+#content3 > section > .typo > ul:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 1567px;
+  left: 550px;
+  top: 620px;
+  line-height: 29px;
+  transform: translateY(60px);
+  transition: all 1s ease 0.5s;
+}
+#content3 > section > .typo > ul > h4 {
+  opacity: 0;
+  position: relative;
+  left: -30px;
+  font-size: 40px;
+}
+#content3 > section > .typo > .roboto > .eng {
+  opacity: 0;
+  position: absolute;
+  width: 176px;
+  height: 176px;
+  top: 75px;
+  left: -230px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 2;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  border-radius: 40px;
+}
+#content3 > section > .typo > .roboto > .eng::after {
+  content: "";
+  position: absolute;
+  background-color: #707070;
+  height: 176px;
+  width: 3px;
+  left: 200px;
+}
+#content3 > section > .typo > .roboto > li {
+  opacity: 0;
+  margin-top: 18px;
+}
+#content3 > section > .typo > ul > li > em {
+  opacity: 0;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  color: #979797;
+}
+#content3 > section > .typo > .roboto > li > strong {
+  opacity: 0;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+#content3 > section > .typo > .roboto > li:nth-of-type(1) > strong {
+  opacity: 0;
+  font-weight: bold;
+}
+#content3 > section > .typo > .roboto > li:nth-of-type(2) > strong {
+  opacity: 0;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+#content3 > section > .typo > .roboto > li > p {
+  opacity: 0;
+  position: absolute;
+  top: 300px;
+  left: -30px;
+  font-size: 25px;
+  line-height: 29px;
+  color: #707070;
+}
+#content3 > section > .typo > ul:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  width: 568px;
+  height: 320px;
+  left: 1122px;
+  top: 620px;
+  transform: translateY(60px);
+  transition: all 1s ease 0.5s;
+}
+#content3 > section > .typo > .noto {
+  opacity: 0;
+  margin-left: 250px;
+}
+#content3 > section > .typo > .noto > .kor {
+  opacity: 0;
+  position: absolute;
+  width: 176px;
+  height: 176px;
+  top: 75px;
+  left: -230px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 2.5;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  border-radius: 40px;
+  transform: translateY(60px);
+  transition: all 1s ease 0.3s;
+}
+#content3 > section > .typo > .noto > .kor::after {
+  content: "";
+  position: absolute;
+  background-color: #707070;
+  height: 176px;
+  width: 3px;
+  left: 200px;
+}
+#content3 > section > .typo > .noto > li {
+  opacity: 0;
+  margin-top: 85px;
+}
+#content3 > section > .typo > ul > li > em {
+  opacity: 0;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  color: #979797;
+}
+#content3 > section > .typo > .noto > li > strong {
+  opacity: 0;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #000000;
+}
+#content3 > section > .typo > .noto > li > p {
+  opacity: 0;
+  position: absolute;
+  top: 300px;
+  left: -30px;
+  font-size: 25px;
+  line-height: 29px;
+  color: #707070;
+}
+
+/* on */
+#content3 > section.on > .num3 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content3 > section.on > .num4 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content3 > section.on > h2:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content3 > section.on > .des > ul > li {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content3 > section.on > h2:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content3 > section.on > .typo > ul:nth-of-type(1) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > ul > h4 {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > .roboto > .eng {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#content3 > section.on > .typo > .roboto > li {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > ul > li > em {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > .roboto > li > strong {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#content3 > section.on > .typo > .roboto > li > p {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > ul:nth-of-type(2) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > .noto {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > .noto > .kor {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#content3 > section.on > .typo > .noto > li {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > ul > li > em {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > .noto > li > strong {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content3 > section.on > .typo > .noto > li > p {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*content4*/
+#content4 {
+  position: relative;
+  width: 1920px;
+  height: 1050px;
+}
+#content4 > section {
+  position: absolute;
+  width: 1567px;
+  height: 900px;
+  left: 150px;
+  top: 10px;
+  background: #ffffff;
+  border-radius: 40px;
+  transform: translateX(40px);
+  transition: all 1s ease 0.2s;
+}
+
+#content4 > section > .num5 {
+  opacity: 0;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 1020px;
+  top: 110px;
+  border-radius: 50%;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content4 > section > h2:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  left: 710px;
+  top: 120px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content4 > section > span > ul > li {
+  opacity: 0;
+  float: left;
+  transform: translateX(60px);
+  transition: all 1s ease 1s;
+}
+#content4 > section > .palet > ul {
+  opacity: 0;
+  position: absolute;
+  left: 500px;
+  top: 276px;
+}
+#content4 > section > .palet > ul > li {
+  opacity: 0;
+  padding-right: 74px;
+}
+#content4 > section > .num6 {
+  opacity: 0;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 1000px;
+  top: 507px;
+  border-radius: 50%;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content4 > section > h2:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  left: 780px;
+  top: 520px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content4 > section > h5 {
+  opacity: 0;
+  position: absolute;
+  left: 786px;
+  top: 600px;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #707070;
+  transform: translateX(50px);
+  transition: all 1s ease 0.8s;
+}
+#content4 > section > .icons > ul {
+  opacity: 0;
+  position: absolute;
+  left: 525px;
+  top: 720px;
+  transform: translateX(50px);
+  transition: all 1s ease 1s;
+}
+#content4 > section > .icons > ul > li {
+  opacity: 0;
+  padding-right: 100px;
+}
+#content4 > section > .icons > ul > li > p {
+  opacity: 0;
+  padding-top: 28px;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  color: #278eff;
+}
+#content4 > section > .icons > ul > li:nth-of-type(1) {
+  margin-top: -11px;
+}
+#content4 > section > .icons > ul > li:nth-of-type(3) {
+  margin-top: -11px;
+}
+
+/* on */
+#content4 > section.on > .num5 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content4 > section.on > .num6 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content4 > section.on > h2:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content4 > section.on > span > ul > li {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content4 > section.on > .palet > ul {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content4 > section.on > .palet > ul > li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#content4 > section.on > h2:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content4 > section.on > h5 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content4 > section.on > .icons > ul {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content4 > section.on > .icons > ul > li {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content4 > section.on > .icons > ul > li > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*content5*/
+#content5 {
+  position: relative;
+  width: 1920px;
+  /* height: 1450px; */
+}
+#content5 > section {
+  position: absolute;
+  height: 1400px;
+  top: -200px;
+}
+#content5 > section > .bg1 {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  left: 250px;
+  top: 300px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+#content5 > section > .numb1 {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 445px;
+  top: 280px;
+  border-radius: 50%;
+  line-height: 1.7;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content5 > section > h2 {
+  opacity: 0;
+  position: absolute;
+  left: 77px;
+  top: 300px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content5 > section > span > .login > li:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 281px;
+  height: 683px;
+  left: 349px;
+  top: 400px;
+  transform: translateY(80px);
+  transition: all 1s ease 0.5s;
+}
+#content5 > section > span > .login > li:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  width: 181px;
+  height: 583px;
+  left: 700px;
+  top: 300px;
+  transform: translateY(80px);
+  transition: all 1s ease 0.2s;
+}
+#content5 > section > span > .login > li:nth-of-type(3) {
+  opacity: 0;
+  position: absolute;
+  width: 181px;
+  height: 583px;
+  left: 700px;
+  top: 700px;
+  transform: translateY(80px);
+  transition: all 1s ease 1s;
+}
+#content5 > section > span > .sns > li:nth-of-type(2) {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  left: 1200px;
+  top: 450px;
+  opacity: 0.5;
+  transform: scale(0.3);
+  transition: all 0.5s ease 0.8s;
+}
+#content5 > section > span > .sns > li:nth-of-type(3) {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  left: 1200px;
+  top: 650px;
+  opacity: 0.5;
+  transform: scale(0.3);
+  transition: all 0.5s ease 0.8s;
+}
+#content5 > section > span > .sns > li:nth-of-type(1) {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  left: 1200px;
+  top: 850px;
+  opacity: 0.5;
+  transform: scale(0.3);
+  transition: all 0.5s ease 0.8s;
+}
+/* on */
+#content5 > section.on > .numb1 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content5 > section.on > h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content5 > section.on > span > .login > li:nth-of-type(1) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content5 > section.on > span > .login > li:nth-of-type(2) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content5 > section.on > span > .login > li:nth-of-type(3) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content5 > section.on > span > .sns > li:nth-of-type(2) {
+  opacity: 1;
+  transform: scale(1);
+}
+#content5 > section.on > span > .sns > li:nth-of-type(3) {
+  opacity: 1;
+  transform: scale(1);
+}
+#content5 > section.on > span > .sns > li:nth-of-type(1) {
+  opacity: 1;
+  transform: scale(1);
+}
+/*content6*/
+#content6 {
+  position: relative;
+  width: 1920px;
+  /* height: 1050px; */
+}
+#content6 > section {
+  position: absolute;
+  top: -100px;
+  height: 1200px;
+}
+#content6 > section > .numb2 {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1650px;
+  top: 122px;
+  border-radius: 50%;
+  line-height: 1.7;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content6 > section > h2 {
+  opacity: 0;
+  position: absolute;
+  left: 1306px;
+  top: 131px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content6 > section > p {
+  opacity: 0;
+  position: absolute;
+  left: 1220px;
+  top: 220px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: right;
+  color: #707070;
+  transform: translateX(60px);
+  transition: all 1s ease 0.7s;
+}
+
+#content6 > section > span > ul:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  right: 65.62%;
+  top: 280px;
+  transform: translateX(-60px);
+  transition: all 1s ease 0.8s;
+}
+#content6 > section > span > ul:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  left: 813px;
+  top: 280px;
+  transform: translateX(-60px);
+  transition: all 1s ease 0.9s;
+}
+#content6 > section > span > .line1 {
+  position: absolute;
+  height: 305px;
+  width: 3px;
+  left: 730px;
+  top: 530px;
+  background: #979797;
+}
+#content6 > section > span > .line2 {
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  left: 652px;
+  top: 833px;
+  background: #979797;
+}
+#content6 > section > span > .line3 {
+  position: absolute;
+  width: 66px;
+  height: 3px;
+  left: 730px;
+  top: 530px;
+  background: #979797;
+}
+#content6 > section > span > .line3::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #979797;
+  border-right: 3px solid #979797;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50px;
+  top: -8px;
+}
+#content6 > section > span:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  left: 562px;
+  top: 920px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
+  transform: translateX(-60px);
+  transition: all 1s ease 1s;
+}
+/* on */
+#content6 > section.on > .numb2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content6 > section.on > h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content6 > section.on > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#content6 > section.on > span > ul:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content6 > section.on > span > ul:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content6 > section.on > span:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+/*content7*/
+#content7 {
+  position: relative;
+  width: 1920px;
+  height: 1656px;
+}
+#content7 > section {
+  position: absolute;
+  top: -30px;
+}
+#content7 > section > .bg2 {
+  z-index: -2;
+  position: absolute;
+  width: 2000px;
+  height: 700px;
+  left: -200px;
+  top: 260px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #278eff 4.5%, #6271ff 104.5%);
+  border-radius: 350px;
+  transform: rotate(15deg);
+}
+#content7 > section > .numb3 {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1600px;
+  top: 50px;
+  line-height: 1.7;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content7 > section > h2 {
+  opacity: 0;
+  position: absolute;
+  left: 1286px;
+  top: 70.38px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content7 > section > p {
+  opacity: 0;
+  position: absolute;
+  left: 1175px;
+  top: 160px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: right;
+  color: #707070;
+  transform: translateX(60px);
+  transition: all 1s ease 0.7s;
+}
+#content7 > section > span > ul:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  left: 283.55px;
+  top: 203px;
+  transform: translateX(30px);
+  transition: all 1s ease 0.7s;
+}
+#content7 > section > span > ul:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  left: 800px;
+  top: 155px;
+  transform: translateX(30px);
+  transition: all 1s ease 0.7s;
+}
+#content7 > section > span > ul > p {
+  opacity: 0;
+  position: absolute;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  width: 500px;
+  line-height: 1.7;
+  color: #fff;
+  transform: translateX(60px);
+  transition: all 1s ease 0.9s;
+}
+#content7 > section > span > .line1 {
+  position: absolute;
+  height: 300px;
+  width: 3px;
+  left: 720px;
+  top: 400px;
+  background: #fff;
+}
+#content7 > section > span > .line2 {
+  position: absolute;
+  width: 150px;
+  height: 3px;
+  left: 573px;
+  top: 700px;
+  background: #fff;
+}
+#content7 > section > span > .line3 {
+  position: absolute;
+  width: 66px;
+  height: 3px;
+  left: 720px;
+  top: 398px;
+  background: #fff;
+}
+#content7 > section > span > .line3::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 50px;
+  top: -8px;
+}
+/* on */
+#content7 > section.on > .numb3 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content7 > section.on > h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content7 > section.on > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content7 > section.on > span > ul:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content7 > section.on > span > ul:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content7 > section.on > span > ul > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+/*content8*/
+#content8 {
+  position: relative;
+  width: 1920px;
+  /* height: 1080px; */
+}
+#content8 > section {
+  position: absolute;
+  top: -50px;
+}
+#content8 > section > .numb4 {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1678px;
+  top: 122px;
+  line-height: 1.7;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content8 > section > h2 {
+  opacity: 0;
+  position: absolute;
+  left: 1494px;
+  top: 139px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content8 > section > p {
+  opacity: 0;
+  position: absolute;
+  left: 1467px;
+  top: 249px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: right;
+  color: #707070;
+  transform: translateX(50px);
+  transition: all 1s ease 0.7s;
+}
+#content8 > section > ul > li > span:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  left: 122px;
+  top: 232px;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  transform: translateX(-100px);
+  transition: all 1s ease 0.7s;
+}
+#content8 > section > ul > li > span:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  left: 100px;
+  top: 542px;
+  font-size: 22px;
+  line-height: 28px;
+  transform: translateX(-100px);
+  transition: all 1s ease 0.7s;
+}
+#content8 > section > span:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 274px;
+  height: 691.69px;
+  left: 622px;
+  top: 227px;
+  transform: translateX(-80px);
+  transition: all 1s ease 0.7s;
+}
+#content8 > section > span:nth-of-type(1) > ul > li {
+  padding-bottom: 95px;
+}
+#content8 > section > span:nth-of-type(1) > ul > li > span {
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  color: #278eff;
+}
+#content8 > section > span:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  left: 946px;
+  top: 255px;
+  transform: translateX(-100px);
+  transition: all 1s ease 1s;
+}
+/* on */
+#content8 > section.on > .numb4 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content8 > section.on > h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content8 > section.on > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content8 > section.on > ul > li > span:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content8 > section.on > ul > li > span:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content8 > section.on > span:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content8 > section.on > span:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+/*content9*/
+#content9 {
+  position: relative;
+  width: 1920px;
+  height: 1518px;
+}
+#content9 > section > .bg3 {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  left: 200px;
+  top: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: scale(0);
+  transition: all 1s ease 0.2s;
+}
+#content9 > section > .numb5 {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1660px;
+  line-height: 1.7;
+  top: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content9 > section > h2 {
+  opacity: 0;
+  position: absolute;
+  left: 1459px;
+  top: 51px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content9 > section > p {
+  opacity: 0;
+  position: absolute;
+  left: 1280px;
+  top: 140px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: right;
+  color: #707070;
+  transform: translateX(50px);
+  transition: all 1s ease 0.7s;
+}
+#content9 > section > span > ul:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  width: 301px;
+  height: 703px;
+  transform: translateY(-100px);
+  transition: all 1s ease 0.7s;
+}
+#content9 > section > span > ul:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  left: 600px;
+  top: 200px;
+  width: 301px;
+  height: 703px;
+  transform: translateY(-100px);
+  transition: all 1s ease 0.7s;
+}
+#content9 > section > span > ul:nth-of-type(3) {
+  opacity: 0;
+  position: absolute;
+  left: 1000px;
+  top: 235px;
+  width: 301px;
+  height: 703px;
+  transform: translateY(-100px);
+  transition: all 1s ease 0.7s;
+}
+#content9 > section > span > ul > li > p {
+  opacity: 0;
+  position: absolute;
+  left: 20px;
+  top: 590px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.7;
+  width: 500px;
+  transform: translateY(-80px);
+  transition: all 1s ease 0.7s;
+}
+#content9 > section > span > ul > .text {
+  opacity: 0;
+  position: absolute;
+  width: 250px;
+  left: 270px;
+  top: 315px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #979797;
+  transform: translateY(-80px);
+  transition: all 1s ease 0.7s;
+}
+#content9 > section > span > .line1 {
+  position: absolute;
+  height: 265px;
+  width: 3px;
+  left: 950px;
+  top: 434px;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+}
+#content9 > section > span > .line2 {
+  position: absolute;
+  width: 74px;
+  height: 3px;
+  left: 879px;
+  top: 434px;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+}
+#content9 > section > span > .line3 {
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  left: 950px;
+  top: 696.19px;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+}
+#content9 > section > span > .line3::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #278eff;
+  border-right: 3px solid #278eff;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 20px;
+  top: -8px;
+}
+/* on */
+#content9 > section.on > .numb5 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content9 > section.on > .bg3 {
+  opacity: 1;
+  transform: scale(1);
+}
+#content9 > section.on > h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content9 > section.on > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content9 > section.on > span > ul:nth-of-type(1) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content9 > section.on > span > ul:nth-of-type(2) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content9 > section.on > span > ul:nth-of-type(3) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content9 > section.on > span > ul > li > p {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content9 > section.on > span > ul > .text {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*content10*/
+#content10 {
+  position: relative;
+  width: 1920px;
+  height: 1482px;
+}
+#content10 > section {
+  position: absolute;
+  top: -100px;
+  height: 1000px;
+}
+#content10 > section > .bg4 {
+  position: absolute;
+  width: 1350px;
+  height: 800px;
+  left: 150px;
+  top: 200px;
+  background: #ffffff;
+  border-radius: 40px;
+  transform: translateX(80px);
+  transition: all 1s ease 0.3s;
+}
+#content10 > section > .numb6-1 {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1780px;
+  top: 140px;
+  line-height: 1.7;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content10 > section > h2 {
+  opacity: 0;
+  position: absolute;
+  left: 1579px;
+  top: 171px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content10 > section > p {
+  opacity: 0;
+  position: absolute;
+  left: 1544px;
+  top: 263px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: right;
+  color: #707070;
+  transform: translateX(50px);
+  transition: all 1s ease 0.7s;
+}
+#content10 > section > span:nth-of-type(1) > ul > li {
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  left: 100px;
+  top: 288px;
+}
+
+#content10 > section > span > .outdoor h3 {
+  opacity: 0;
+  position: absolute;
+  left: 550px;
+  top: 300px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #278eff;
+  transform: translateX(-50px);
+  transition: all 1s ease 0.7s;
+}
+#content10 > section > span > ul > li {
+  opacity: 0;
+  width: 140px;
+  height: 140px;
+  transform: translateX(-100px);
+  transition: all 1s ease 0.7s;
+}
+#content10 > section > span > .outdoor > li:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  left: 450px;
+  top: 400px;
+  transform: translateX(-100px);
+  transition: all 1s ease 0.7s;
+}
+#content10 > section > span > .outdoor > li:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  left: 450px;
+  top: 580px;
+  transform: translateX(-100px);
+  transition: all 1s ease 0.7s;
+}
+#content10 > section > span > .outdoor > li:nth-of-type(3) {
+  opacity: 0;
+  position: absolute;
+  left: 450px;
+  top: 760px;
+  transform: translateX(-100px);
+  transition: all 1s ease 0.7s;
+}
+#content10 > section > span > .outdoor > li > span {
+  opacity: 0;
+  position: absolute;
+  width: 586px;
+  top: 40px;
+  left: 185px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #979797;
+  transform: translateX(-100px);
+  transition: all 1s ease 1s;
+}
+
+#content10 > section > span > .indoor h3 {
+  opacity: 0;
+  position: absolute;
+  left: 1050px;
+  top: 300px;
+  font-weight: 500;
+  font-size: 28px;
+  color: #278eff;
+  line-height: 33px;
+  transform: translateX(-50px);
+  transition: all 1s ease 0.7s;
+}
+#content10 > section > span > .indoor > li:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  left: 950px;
+  top: 400px;
+  transform: translateX(-100px);
+  transition: all 1s ease 0.9s;
+}
+#content10 > section > span > .indoor > li:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  left: 950px;
+  top: 580px;
+  transform: translateX(-100px);
+  transition: all 1s ease 0.9s;
+}
+#content10 > section > span > .indoor > li:nth-of-type(3) {
+  opacity: 0;
+  position: absolute;
+  left: 950px;
+  top: 760px;
+  transform: translateX(-100px);
+  transition: all 1s ease 0.9s;
+}
+#content10 > section > span > .indoor > li > span {
+  opacity: 0;
+  position: absolute;
+  width: 339px;
+  top: 40px;
+  left: 160px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #979797;
+  transform: translateX(-100px);
+  transition: all 1s ease 1s;
+}
+/* on */
+#content10 > section.on > .bg4 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > .numb6-1 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > ul > li {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > .outdoor h3 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > .outdoor > li:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > .outdoor > li:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > .outdoor > li:nth-of-type(3) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > .outdoor > li > span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#content10 > section.on > span > .indoor h3 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > .indoor > li:nth-of-type(1) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > .indoor > li:nth-of-type(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > .indoor > li:nth-of-type(3) {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content10 > section.on > span > .indoor > li > span {
+  opacity: 1;
+  transform: translateX(0);
+}
+/*content11*/
+#content11 {
+  position: relative;
+  width: 1920px;
+  height: 1522px;
+}
+#content11 > section {
+  position: absolute;
+  top: -80px;
+}
+#content11 > section > .numb6-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1653px;
+  top: 120px;
+  line-height: 1.7;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content11 > section > h2 {
+  opacity: 0;
+  position: absolute;
+  left: 1455px;
+  top: 137px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content11 > section > p {
+  opacity: 0;
+  position: absolute;
+  left: 1350px;
+  top: 254px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: right;
+  color: #707070;
+  transform: translateX(50px);
+  transition: all 1s ease 0.7s;
+}
+#content11 > section > span > ul:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  left: 200px;
+  top: 300px;
+  transform: translateY(-150px);
+  transition: all 1s ease 0.5s;
+}
+#content11 > section > span > ul:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  top: 250px;
+  left: 580px;
+  transform: translateY(-150px);
+  transition: all 1s ease 0.5s;
+}
+#content11 > section > span > ul:nth-of-type(1) > li > p {
+  opacity: 0;
+  position: absolute;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  left: 55px;
+  top: 800px;
+  line-height: 2;
+  transform: translateY(-150px);
+  transition: all 1s ease 0.7s;
+}
+#content11 > section > span > ul:nth-of-type(2) > li > span:nth-of-type(1) {
+  opacity: 0;
+  position: absolute;
+  width: 348px;
+  left: 380px;
+  top: 195px;
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #979797;
+  transform: translateY(-150px);
+  transition: all 1s ease 0.8s;
+}
+#content11 > section > span > ul:nth-of-type(2) > li > span:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  width: 248px;
+  left: 360px;
+  top: 375px;
+  font-weight: 500;
+  font-size: 25px;
+  color: #979797;
+  transform: translateY(-150px);
+  transition: all 1s ease 0.8s;
+}
+#content11 > section > span > .line1 {
+  z-index: 3;
+  position: absolute;
+  width: 110px;
+  height: 3px;
+  left: 830px;
+  top: 460px;
+  background: #979797;
+}
+#content11 > section > span > .line1::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #979797;
+  border-right: 3px solid #979797;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 98px;
+  top: -4px;
+}
+#content11 > section > span > .line2 {
+  z-index: 3;
+  position: absolute;
+  width: 90px;
+  height: 3px;
+  left: 830px;
+  top: 640px;
+  background: #979797;
+}
+#content11 > section > span > .line2::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #979797;
+  border-right: 3px solid #979797;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 78px;
+  top: -4.5px;
+}
+/* on */
+#content11 > section.on > .numb6-2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content11 > section.on > h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content11 > section.on > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content11 > section.on > span > ul:nth-of-type(1) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content11 > section.on > span > ul:nth-of-type(2) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content11 > section.on > span > ul:nth-of-type(1) > li > p {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content11 > section.on > span > ul:nth-of-type(2) > li > span:nth-of-type(1) {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content11 > section.on > span > ul:nth-of-type(2) > li > span:nth-of-type(2) {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*content12*/
+#content12 {
+  position: relative;
+  width: 1920px;
+  height: 1602px;
+}
+#content12 > section > .bg5 {
+  position: absolute;
+  width: 2000px;
+  height: 702px;
+  overflow: hidden;
+  left: -250px;
+  top: 270px;
+  background: linear-gradient(180deg, #278eff 4.5%, #6271ff 104.5%);
+  border-radius: 350px;
+  transform: rotate(15deg);
+}
+#content12 > section > .page > .numb7 {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 250px;
+  top: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.7;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content12 > section > .page > h2 {
+  opacity: 0;
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content12 > section > .page > p {
+  opacity: 0;
+  position: absolute;
+  left: 30px;
+  top: 130px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: left;
+  color: #fff;
+  transform: translateX(50px);
+  transition: all 1s ease 0.7s;
+}
+#content12 > section > .page > span > ul > li {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  left: 520px;
+  top: 100px;
+  transform: translateX(80px);
+  transition: all 1s ease 0.9s;
+}
+#content12 > section > .page > span > ul > li > span {
+  opacity: 0;
+  position: absolute;
+  width: 100px;
+  left: -165px;
+  top: 194px;
+  color: #fff;
+  transform: translateX(80px);
+  transition: all 1s ease 0.9s;
+}
+
+#content12 > section > .qna > .numb8 {
+  opacity: 0;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1670px;
+  top: 100px;
+  line-height: 1.7;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  background: linear-gradient(180deg, #278eff 0%, #6271ff 100%);
+  transform: translateX(50px);
+  transition: all 1s ease 0.3s;
+}
+#content12 > section > .qna > h2 {
+  opacity: 0;
+  position: absolute;
+  left: 1556px;
+  top: 150px;
+  transform: translateX(50px);
+  transition: all 1s ease 0.5s;
+}
+#content12 > section > .qna > p {
+  opacity: 0;
+  position: absolute;
+  left: 1500px;
+  top: 230px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: right;
+  color: #707070;
+  transform: translateX(50px);
+  transition: all 1s ease 0.7s;
+}
+#content12 > section > .qna > span > ul > li {
+  opacity: 0;
+  position: absolute;
+  width: 301px;
+  height: 703px;
+  left: 1000px;
+  top: 300px;
+  transform: translateX(80px);
+  transition: all 1s ease 0.9s;
+}
+#content12 > section > .qna > span > ul > li > span {
+  opacity: 0;
+  position: absolute;
+  width: 100px;
+  left: 350px;
+  top: 225px;
+  color: #fff;
+  transform: translateX(80px);
+  transition: all 1s ease 0.9s;
+}
+#content12 > section > .page > .line1 {
+  z-index: 3;
+  position: absolute;
+  width: 320px;
+  height: 3px;
+  left: 420px;
+  top: 300px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateX(30px);
+  transition: all 1s ease 1.2s;
+}
+#content12 > section > .page > .line1::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  display: inline-block;
+  transform: rotate(225deg);
+  position: absolute;
+  top: -5px;
+}
+#content12 > section > .qna > .line2 {
+  z-index: 3;
+  position: absolute;
+  width: 90px;
+  height: 3px;
+  left: 1210px;
+  top: 530px;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateX(30px);
+  transition: all 1s ease 1.2s;
+}
+#content12 > section > .qna > .line2::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 78px;
+  top: -4.5px;
+}
+/* on */
+#content12 > section.on > .page > .numb7 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content12 > section.on > .page > h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content12 > section.on > .page > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content12 > section.on > .page > span > ul > li {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content12 > section.on > .page > span > ul > li > span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#content12 > section.on > .qna > .numb8 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content12 > section.on > .qna > h2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content12 > section.on > .qna > p {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content12 > section.on > .qna > span > ul > li {
+  opacity: 1;
+  transform: translateX(0);
+}
+#content12 > section.on > .qna > span > ul > li > span {
+  opacity: 1;
+  transform: translateX(0);
+}
+/*content13*/
+#content13 {
+  position: relative;
+  width: 1920px;
+  top: -300px;
+  /* height: 1932px; */
+}
+#content13 > section > .bg6 {
+  position: absolute;
+  width: 2300px;
+  height: 780px;
+  left: -350.59px;
+  top: 650px;
+  background: #ffffff;
+  border-radius: 350px;
+  transform: rotate(23.99deg);
+}
+#content13 > section > span > ul > li > img {
+  width: 680px;
+  height: 392.35px;
+}
+#content13 > section > span > ul > li:nth-of-type(1) {
+  position: absolute;
+  left: 750px;
+  top: 400px;
+}
+#content13 > section > span > ul > li:nth-of-type(2) {
+  position: absolute;
+  left: 131px;
+  top: 1057px;
+}
+#content13 > section > span > ul > li:nth-of-type(3) {
+  position: absolute;
+  left: 202px;
+  top: 706px;
+}
+#content13 > section > span > ul > li:nth-of-type(4) {
+  position: absolute;
+  left: 328px;
+  top: 357px;
+}
+#content13 > section > span > ul > li:nth-of-type(5) {
+  position: absolute;
+  left: 1146px;
+  top: 1057px;
+}
+#content13 > section > span > ul > li:nth-of-type(6) {
+  position: absolute;
+  left: 1252px;
+  top: 426px;
+}
+#content13 > section > span > ul > li:nth-of-type(7) {
+  position: absolute;
+  left: 1146px;
+  top: 749px;
+}
+#content13 > section > span > ul > li:nth-of-type(8) {
+  position: absolute;
+  left: 582px;
+  top: 1098px;
+}
+#content13 > section > span > ul > li:nth-of-type(9) {
+  position: absolute;
+  left: 705px;
+  top: 718px;
+}
+#content13 > section > span:nth-of-type(2) {
+  position: absolute;
+  left: 541.63px;
+  top: 1600px;
+  transform: translateY(-30px);
+  transition: all 1s ease 1.2s;
+}
+#content13 > section > span:nth-of-type(2) strong {
+  position: absolute;
+  width: 900px;
+  left: 60px;
+  top: 35px;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  color: #278eff;
+  transform: translateY(-30px);
+  transition: all 1s ease 1.2s;
+}
+

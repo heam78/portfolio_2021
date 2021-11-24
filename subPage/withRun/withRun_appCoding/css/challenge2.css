@@ -1,0 +1,235 @@
+/* challenge2.css */
+@import url(common.css);
+main {
+  height: 80%;
+}
+.background {
+  width: 375px;
+  height: 532px;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+}
+.background1 {
+  width: 375px;
+  height: 298px;
+  background: #eaeaea;
+  border-radius: 50px 0 0 0;
+  margin-top: 340px;
+}
+/* challenge_start */
+.challenge_start {
+  margin-top: -450px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.challenge_start h1 {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.challenge_start .start {
+  position: absolute;
+  top: 70px;
+  left: 58px;
+  width: 259px;
+  height: 177px;
+  line-height: 177px;
+  background: linear-gradient(180deg, #72b5ff 0%, #707dff 100%);
+  border-radius: 50%;
+  text-align: center;
+}
+.challenge_start .start a {
+  font-size: 45px;
+  color: #ffffff;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+.challenge_start.on .start {
+  display: none;
+}
+.challenge_start.on .play {
+  display: block;
+}
+.challenge_start .play {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 58px;
+  width: 259px;
+  height: 177px;
+  line-height: 177px;
+  background: linear-gradient(180deg, #72b5ff 0%, #707dff 100%);
+  border-radius: 50%;
+  text-align: center;
+}
+.challenge_start .play > a {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.challenge_start .play > a > p {
+  font-size: 15px;
+  margin-top: -140px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.challenge_start ul {
+  display: flex;
+  position: absolute;
+  top: 290px;
+  left: 134px;
+}
+.challenge_start ul > li {
+  padding-right: 15px;
+}
+.challenge_start ul > li:nth-of-type(2) {
+  margin-top: -5px;
+}
+.bt_start1 {
+  opacity: 1;
+  position: relative;
+}
+.bt_stop {
+  opacity: 0;
+  position: absolute;
+  left: 39px;
+}
+.bt_reStart.on {
+  opacity: 0;
+  display: none;
+}
+.bt_stop.on {
+  opacity: 1;
+}
+.challenge_start ul > li:nth-of-type(3).on {
+  margin-left: 32px;
+}
+.challenge_start ul > li:nth-of-type(3).re {
+  margin-left: 0;
+}
+/* challenge_Phase */
+.challenge_Phase {
+  margin-top: -325px;
+  margin-left: 45px;
+}
+.challenge_Phase > div {
+  width: 286px;
+  height: 147px;
+  background: #fff;
+  border-radius: 20px 0 20px 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.challenge_Phase > div > h2 {
+  font-size: 22px;
+  background: linear-gradient(to bottom, #5aa8fa, #6776ff);
+  -webkit-background-clip: text; /* 텍스트에만 백그라운드 적용 */
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+.challenge_Phase > div > h3 {
+  font-size: 12px;
+  color: #7f7d7d;
+}
+.challenge_Phase .remaining {
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.challenge_Phase .remaining p {
+  font-size: 12px;
+  color: #7f7d7d;
+}
+.challenge_Phase .remaining p span {
+  color: #278eff;
+}
+.loader {
+  position: relative;
+  width: 246px;
+  height: 7px;
+  top: 15px;
+  left: 2px;
+  background: #dddada;
+  border-radius: 40px;
+}
+.loader.on::after {
+  content: "";
+  position: absolute;
+  background: #1ea5fc;
+  top: 0px;
+  left: 0px;
+  height: 7px;
+  width: 100%;
+  opacity: 1;
+  border-radius: 40px;
+  transform-origin: 100% 0;
+  animation: loader 80s 0s linear;
+}
+@keyframes loader {
+  0% {
+    width: 0px;
+  }
+  70% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.challenge_progess {
+  margin-top: 30px;
+  margin-left: 8px;
+}
+.challenge_progess ul {
+  display: flex;
+}
+.challenge_progess ul > li {
+  width: 85px;
+  height: 85px;
+  background: #fff;
+  border-radius: 25px;
+  margin-right: 8px;
+  font-size: 11px;
+  color: #278eff;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+li div.circle {
+  background: #dddada;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 22px;
+  margin-top: 8px;
+  position: relative;
+}
+li div.circle::after {
+  z-index: 3;
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 50%;
+}
+.circle-chart4.on {
+  z-index: 2;
+  position: absolute;
+  left: 22px;
+  top: -40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+/* tab_bar */
+.tab_bar {
+  z-index: 10;
+}

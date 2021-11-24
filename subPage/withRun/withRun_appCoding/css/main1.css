@@ -1,0 +1,224 @@
+/* main1.css */
+@import url(common.css);
+body {
+  overflow: hidden;
+}
+body > header {
+  color: #000;
+}
+body.on {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+div.bg.on {
+  z-index: 90;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+}
+/* main */
+main {
+  height: 95%;
+  margin: 0px 25px 0;
+}
+
+.showAll > a {
+  color: #6271ff;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0 50px;
+}
+.profile > ul {
+  display: flex;
+  align-items: center;
+}
+.profile_img img {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.profile li:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: 600;
+}
+.profile li:nth-of-type(2) span {
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+  -webkit-background-clip: text; /* 텍스트에만 백그라운드 적용 */
+  -webkit-text-fill-color: transparent;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* activity_section */
+.activity_section {
+  margin: 45px 0;
+  position: relative;
+}
+.activity_section h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.activity_section ul {
+  display: flex;
+  justify-content: space-between;
+}
+.activity_section ul li {
+  background: linear-gradient(180deg, #eaf4ff, #eff1ff);
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.65),
+    5px 10px 15px rgba(98, 113, 255, 0.1);
+  border-radius: 10px;
+  width: 100px;
+  height: 138px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.activity_section ul > li > a > img {
+  margin: 30px 30px 20px;
+}
+.activity_section ul li a {
+  color: #1ea5fc;
+  font-weight: 500;
+  font-size: 17px;
+}
+.activity_section > .showAll > a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* graph */
+.graph {
+  background: linear-gradient(180deg, #e2effd, #dee2fa);
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.65),
+    5px 10px 15px rgba(98, 113, 255, 0.1);
+  border-radius: 10px;
+  width: 330px;
+  height: 150px;
+  position: relative;
+}
+.graph > span {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+.graph > span:nth-of-type(1) {
+  color: #1ea5fc;
+  font-weight: 500;
+  padding: 35px 0 5px 11px;
+  box-sizing: border-box;
+}
+.graph > span:nth-of-type(2) {
+  font-weight: 600;
+  padding-left: 5px;
+}
+.graph > ul {
+  display: flex;
+  margin: 50px 0 0 80px;
+}
+.graph > ul > li {
+  width: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  margin-right: 5px;
+}
+.graph > ul > li::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+  width: 5px;
+  height: 15px;
+  border-radius: 20px;
+  background: #1ea5fc;
+  animation: ani 1.5s linear 0s alternate infinite;
+}
+.graph > ul > li:nth-of-type(1)::after {
+  height: 99px;
+  bottom: 15px;
+  animation-delay: 0.1s;
+}
+.graph > ul > li:nth-of-type(2)::after {
+  height: 67px;
+  bottom: 15px;
+  animation-delay: 0.2s;
+}
+.graph > ul > li:nth-of-type(3)::after {
+  height: 86px;
+  bottom: 15px;
+  animation-delay: 0.3s;
+}
+.graph > ul > li:nth-of-type(4)::after {
+  height: 29px;
+  bottom: 15px;
+  animation-delay: 0.4s;
+}
+.graph > ul > li:nth-of-type(5)::after {
+  height: 50px;
+  bottom: 15px;
+  animation-delay: 0.5s;
+}
+.graph > ul > li:nth-of-type(6)::after {
+  height: 110px;
+  bottom: 15px;
+  animation-delay: 0.6s;
+}
+@keyframes ani {
+  from {
+    height: 100%;
+  }
+}
+.graph > .showAll > a {
+  position: absolute;
+  top: -25px;
+  right: 10px;
+}
+/* total */
+.total {
+  margin-top: 45px;
+  position: relative;
+}
+.total > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+.total > ul > li {
+  background: linear-gradient(180deg, #e2effd, #dee2fa);
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.65),
+    5px 10px 15px rgba(98, 113, 255, 0.1);
+  border-radius: 10px;
+  width: 110px;
+  height: 74px;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 14px;
+  box-sizing: border-box;
+}
+.total > ul > li span {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  padding-top: 5px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #278eff, #6271ff);
+  -webkit-background-clip: text; /* 텍스트에만 백그라운드 적용 */
+  -webkit-text-fill-color: transparent;
+}
+.total > .showAll > a {
+  position: absolute;
+  top: -25px;
+  right: 10px;
+}
