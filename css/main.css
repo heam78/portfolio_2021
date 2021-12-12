@@ -36,7 +36,7 @@ section {
   bottom: 15000px;
   margin: 30px auto;
   width: 1820px;
-  height: 9300px;
+  height: 9500px;
   background: #f0ede8;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
   transition: bottom 2s ease-in-out 0s;
@@ -107,7 +107,7 @@ header {
   z-index: 100;
   display: block;
   position: absolute;
-  top: -240px;
+  top: -420px;
   right: -50px;
   transition: right 1s linear 4s;
 }
@@ -118,11 +118,11 @@ header {
   z-index: 100;
   position: fixed;
   top: 100px;
-  left: 1700px;
+  left: 2000px;
 }
 .close_btn.on {
   z-index: 100;
-  right: 150px;
+  left: 1750px;
 }
 /* mob */
 .mob > ul.mob_gnb {
@@ -349,7 +349,7 @@ span.bar_graph5.on::after {
 /* content1 */
 #content1 {
   position: relative;
-  margin-top: -9250px;
+  margin-top: -9450px;
 }
 #content1 > section > .bg_circle > h1.prot {
   position: absolute;
@@ -797,7 +797,7 @@ h2.cont2_proj {
 }
 .more_btn {
   z-index: 100;
-  margin: 50px auto;
+  margin: 50px 0;
 }
 .more_btn > a {
   position: relative;
@@ -1150,12 +1150,13 @@ h2.cont2_proj {
 #content4 {
   z-index: 3;
   position: relative;
+  top: 50px;
   width: 1600px;
   font-family: Roboto;
   color: #000;
 }
 #content4 > section {
-  padding: 100px 300px;
+  padding: 200px 300px;
   margin-left: 1000px;
   width: 1600px;
 }
