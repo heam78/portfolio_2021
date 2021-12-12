@@ -1150,13 +1150,12 @@ h2.cont2_proj {
 #content4 {
   z-index: 3;
   position: relative;
-  top: 50px;
   width: 1600px;
   font-family: Roboto;
   color: #000;
 }
 #content4 > section {
-  padding: 200px 300px;
+  padding: 100px 300px;
   margin-left: 1000px;
   width: 1600px;
 }
