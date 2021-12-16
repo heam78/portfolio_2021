@@ -780,7 +780,19 @@ h2.cont2_proj {
 }
 .text > .inpo > span {
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.8;
+}
+.text > .inpo > span > strong {
+  font-weight: 800;
+}
+.text > .inpo > span > em {
+  display: block;
+  padding-top: 10px;
+}
+.text > .inpo > span p {
+  display: inline;
+  color: #a87310;
+  font-weight: 800;
 }
 .text > .language > h4 {
   font-size: 25px;
@@ -816,6 +828,9 @@ h2.cont2_proj {
   color: #fff;
   box-shadow: 130px 0 0 0 rgba(221, 198, 154, 1) inset;
 }
+.more_btn > .git:hover {
+  box-shadow: 200px 0 0 0 rgba(221, 198, 154, 1) inset;
+}
 
 /* content3 */
 #content3 {
@@ -826,7 +841,7 @@ h2.cont2_proj {
   color: #000;
 }
 #content3 > section {
-  padding: 200px 300px;
+  padding: 100px 300px;
 }
 #content3 > section > .cont3_text {
   display: flex;
@@ -843,6 +858,13 @@ h2.cont2_proj {
 /* btn */
 #content3 > section > .cont3_text > .more_btn > a:nth-of-type(2):hover {
   box-shadow: 310px 0 0 0 rgba(221, 198, 154, 1) inset;
+}
+#content3 > section > .cont3_text > .more_btn > .samGit {
+  display: inline-block;
+  margin-top: 25px;
+}
+#content3 > section > .cont3_text > .more_btn > .samGit:hover {
+  box-shadow: 200px 0 0 0 rgba(221, 198, 154, 1) inset;
 }
 /* cont3_img */
 #content3 > section > .cont3_img {
@@ -956,7 +978,7 @@ h2.cont2_proj {
   height: 150px;
   background-size: contain;
   position: relative;
-  top: -930px;
+  top: -870px;
   left: -190px;
 }
 #content3 > section > .cont3_bg > ul > li:nth-of-type(1)::after {
@@ -1102,7 +1124,7 @@ h2.cont2_proj {
 .cont3_leaf {
   position: relative;
   left: 700px;
-  top: -1050px;
+  top: -900px;
 }
 .cont3_leaf::after {
   content: "";
@@ -1171,6 +1193,10 @@ h2.cont2_proj {
 #content4 > section.on > .cont4_text {
   margin-left: 0;
 }
+/* con4_btn
+#content4 > section > .cont4_text > .more_btn > .cjGit:hover {
+  box-shadow: 200px 0 0 0 rgba(221, 198, 154, 1) inset;
+} */
 /* cont4_img */
 #content4 > section > .cont4_img {
   opacity: 0;
@@ -1417,6 +1443,11 @@ h2.cont2_proj {
 #content5 > section.on > .cont5_text {
   margin-left: 0;
 }
+/* btn */
+.withGit {
+  display: inline-block;
+  margin-top: 25px;
+}
 /* cont5_img */
 #content5 > section > .cont5_img {
   opacity: 0;
@@ -1428,7 +1459,7 @@ h2.cont2_proj {
 #content5 > section > .cont5_img > .moc_pc {
   z-index: 100;
   position: absolute;
-  top: -80px;
+  top: 80px;
   left: 900px;
   width: 900px;
   height: 800px;
@@ -1461,7 +1492,7 @@ h2.cont2_proj {
 #content5 > section > .cont5_bg > ul > li:nth-of-type(2) {
   z-index: 30;
   position: absolute;
-  top: 0px;
+  top: 150px;
   left: 900px;
   width: 900px;
   height: 700px;
@@ -1508,7 +1539,7 @@ h2.cont2_proj {
 .coun5_leaf {
   position: relative;
   left: 800px;
-  top: -800px;
+  top: -650px;
 }
 .coun5_leaf::after {
   content: "";
@@ -1564,7 +1595,7 @@ h2.cont2_proj {
   color: #000;
 }
 #content6 > section {
-  padding: 200px 300px;
+  padding: 150px 300px;
   margin-left: 1000px;
 }
 #content6 > section > .cont6_text {
@@ -1586,6 +1617,8 @@ h2.cont2_proj {
   width: 550px;
 }
 #content6 > section > .cont6_text > .more_btn > a {
+  display: inline-block;
+  margin-bottom: 15px;
   position: relative;
   left: 0px;
   border: 2px solid #ddc69a;
@@ -1597,19 +1630,18 @@ h2.cont2_proj {
   color: #252329;
   transition: all 0.28s ease 0s;
 }
-#content6 > section > .cont6_text > .more_btn > a:nth-of-type(3) {
-  top: 50px;
-}
 #content6 > section > .cont6_text > .more_btn > a:hover {
   color: #fff;
   box-shadow: 130px 0 0 0 rgba(221, 198, 154, 1) inset;
 }
-#content6 > section > .cont6_text > .more_btn > a:nth-of-type(2):hover {
-  box-shadow: 310px 0 0 0 rgba(221, 198, 154, 1) inset;
-}
+#content6 > section > .cont6_text > .more_btn > a:nth-of-type(2):hover,
 #content6 > section > .cont6_text > .more_btn > a:nth-of-type(3):hover {
+  box-shadow: 250px 0 0 0 rgba(221, 198, 154, 1) inset;
+}
+#content6 > section > .cont6_text > .more_btn > a:nth-of-type(4):hover,
+#content6 > section > .cont6_text > .more_btn > a:nth-of-type(5):hover {
   color: #fff;
-  box-shadow: 210px 0 0 0 rgba(221, 198, 154, 1) inset;
+  box-shadow: 310px 0 0 0 rgba(221, 198, 154, 1) inset;
 }
 /* cont6_img */
 #content6 > section > .cont6_img {
@@ -1836,6 +1868,7 @@ h2.cont2_proj {
 }
 #content7 > section {
   padding: 200px 300px;
+  margin-top: 100px;
 }
 #content7 > section > .cont7_text {
   display: flex;
