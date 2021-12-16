@@ -112,7 +112,7 @@ $(document).ready(function () {
   //with Run 팝업창 크기로 열기
   $(".popup").click(function () {
     window.open(
-      "http://127.0.0.1:5503/subPage/withRun/withRun_appCoding/splash.html",
+      "https://heam78.github.io/withRunApp/splash",
       "With Run",
       "width=375px, height=812px, scrollbars=yes, left=1200px, top=300px"
     );
@@ -127,15 +127,35 @@ $(document).ready(function () {
   $(".kakaoGit").click(function () {
     window.open("https://github.com/heam78/kakao");
   });
-  //나비 마우스오버시
 
-  // $(".quick_img").bind("mouseover focus", function () {
-  //   $(".quick").addClass("on");
-  //   $(".quick_img").addClass("on");
-  // });
-
-  // $(".quick_img").bind("mouseleave blur", function () {
-  //   $(".quick").removeClass("on");
-  //   $(".quick_img").removeClass("on");
-  // });
+  $(".samsungsemWeb").click(function () {
+    window.open("https://heam78.github.io/samsungsem/index.html");
+  });
+  $(".samGit").click(function () {
+    window.open("https://github.com/heam78/samsungsem");
+  });
+  $(".cjoneWeb").click(function () {
+    window.open("https://heam78.github.io/cjone/");
+  });
+  $(".cjGit").click(function () {
+    window.open("https://github.com/heam78/cjone");
+  });
+  $(".withLand").click(function () {
+    window.open("https://heam78.github.io/withRun-Landing/");
+  });
+  $(".withGit").click(function () {
+    window.open("https://github.com/heam78/withRunApp");
+  });
+  $(".lockWeb").click(function () {
+    window.open("https://heam78.github.io/locknlock/");
+  });
+  $(".lockGit").click(function () {
+    window.open("https://github.com/heam78/locknlock");
+  });
+  $(".lockReac").click(function () {
+    window.open("https://heam78.github.io/locknlock-reac/");
+  });
+  $(".reacGit").click(function () {
+    window.open("https://github.com/heam78/locknlock-reac");
+  });
 });
